@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#light.bg-main {
+    background-color: #f7f7f7;
+}
+
+#light.bg-screen {
+    background-color: #e1e6ee;
+}
+
+#light.text {
+    color: #000;
+}
+
+#light>.input {
+    background-color: #fff;
+}
+
+#light>.button {
+    background-color: rgb(228, 228, 228);
+    transition: all .2s;
+}
+
+#light svg {
+    color: #000;
+}
+
+#light>.button:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+#light>.theme-btn {
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity));
+    background-color: #fff;
+    transition: background-color .2s;
+}
+
+#light>.theme-btn:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+
+
+#dark.bg-main {
+    background-color: rgb(19, 19, 19);
+}
+
+#dark.bg-screen {
+    background-color: rgb(51, 51, 51);
+}
+
+#dark.text {
+    color: #fff;
+}
+
+#dark>.input {
+    background-color: rgb(71, 71, 71);
+}
+
+#dark>.button {
+    background-color: rgb(49, 49, 49);
+    transition: all .2s;
+}
+
+#dark>.button:hover {
+    background-color: rgb(32, 32, 32);
+}
+
+#dark svg {
+    color: #fff;
+}
+
+#dark>.theme-btn {
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+    background-color: #000;
+    transition: background-color .2s;
+}
+
+#dark>.theme-btn:hover {
+    background-color: rgb(46, 46, 46);
+}
