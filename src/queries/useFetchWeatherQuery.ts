@@ -11,7 +11,7 @@ export const useFetchWeatherQuery = (
     return useQuery(
         ['fetchWeather', params], async () => {
             try {
-                const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${params.search}&APPID=bf0439d384c941926a56e872951ec8be`)
+                const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${params.search}&APPID=bf0439d384c941926a56e872951ec8be`)
                 return await response.json()
             } catch (error) {
                 return error
